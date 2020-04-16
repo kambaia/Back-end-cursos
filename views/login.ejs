@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PRODESI</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-------------------------------Arquivos java script ---------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                <div id="first">
+                    <div class="myform form ">
+                        <div class="logo mb-3">
+                            <div class="col-md-12 text-center">
+                                <img src="/images/logo1.svg" height="128" />
+                            </div>
+                            <div class="col-md-12 text-center space">
+                                <h4>Unidade Técnica de Coordenação (UTC - Prodesi)</h4>
+                            </div>
+                        </div>
+                        <form action="javascript:void(0)" method="POST">
+                            <input type="text" id="email" class="form-control" placeholder="Nome de utilizador">
+                            <input type="password" id="senha" class="form-control" placeholder="Palavra-passe">
+                            <button type="button" onclick="entrar()" class="btn btn-primary btn-login">Entrar</button>
+                            <div id="msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

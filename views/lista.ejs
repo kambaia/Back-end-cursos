@@ -1,0 +1,33 @@
+<% include partials/head %>
+
+	<body class="body-index">	
+		<div class="container-flue">
+			<div class="head-card">
+				<table class="table table-border">
+				<thead class="custom-head-color">
+					<tr>
+						<th scope="col"></th>
+						<th scope="col">Documento</th>
+						<th scope="col">Projecto</th>
+						<th scope="col">Data de envio</th>
+						<th scope="col">Enviado por</th>
+						<th scope="col">Download</th>
+					</tr>
+				</thead>
+				<tbody class="content_table">
+					<% for(var i = 0; i < docs.length; i++) { %>
+						<tr>
+							<td><img src="./../images/<%=docs[i].formato%>.svg" height="24" /></td>
+							<td><%=docs[i].documento%></td>
+							<td><%=docs[i].dominio %></td>
+							<td><%=docs[i].data_envio  %></td>
+							<td><%=docs[i].utilizador  %></td>
+							<td class="dowload"><a target="_blank" href="/lista-documentos/download/<%=docs[i].id%>/<%=docs[i].documento%>.<%=docs[i].formato%>">Descarregar</a></td>
+						</tr>
+					<% } %>
+				</tbody>
+				</table>
+			</div>
+   </div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+
+<% include partials/head %>
+
+<main role="main">
+	<section class="text-center container-my">
+		<div class="container">
+			<h2>Carregue e descarregue os seus documentos de trabalho | <%= grupo %></h2>
+			<div class="dialog content-pastas">
+				<div class="pastas">
+					<a href="/formulario-upload/<%=dominio %>">
+						<img src="./../images/upload.svg" height="84" alt="Pastas de trabalho" />
+						<span>Carregar Documentos</span>
+					</a>
+				</div>
+				<div class="pastas">
+					<a href="/lista-documentos/<%=dominio %>">
+						<img src="./../images/download.svg" height="84" alt="Pastas de trabalho" />
+						<span>Descarregar Documentos</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<% include partials/footer %>

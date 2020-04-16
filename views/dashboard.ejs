@@ -1,0 +1,27 @@
+<% include partials/head %>
+
+<main role="main">
+	<section class="text-center container-my">
+		<div class="container">
+			<h2 class="mt-4">Grupos de Trabalho</h2>
+			<div class="dialog content-pastas">
+				<% 
+					const data = JSON.parse(grupos);
+					for ( let i in data) { %>
+						<div class="pastas">
+							<a href="/dominio/<%=data[i]._id%>">
+								<% if (data[i].documentos.length < 1) { %>
+									<img src="./../images/folder_empty.svg" height="84" alt="Pastas de trabalho" />
+								<% } else { %>
+									<img src="./../images/folder_fill.svg" height="84" alt="Pastas de trabalho" /> 
+								<% } %>
+								<span><%=data[i].nome %></span>
+							</a>
+						</div>
+				<% } %>
+			</div>
+		</div>
+	</section>
+</main>
+
+<% include partials/footer %>

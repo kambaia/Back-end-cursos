@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav{
+	background-color: rgb(37, 37, 37);
+	height: 50px;
+	width: 100%;
+	padding: 16px;
+	margin-bottom: 16px;
+}
+
+.nav ul {
+	display: block;
+	width: 100%;
+	
+}
+h2{
+	text-align: center;
+}
+.dialog{
+	margin: 4% auto;
+	text-align: center;
+}
+.dialog .btn{
+	width: 25%;
+	margin-left: 4%;
+	background-color: rgb(37, 37, 37);
+}
+.nav ul li {
+	float: left;
+	margin-left: 5%;
+	
+
+}
+.nav ul li a {
+	display: inline-block;
+	line-height: 50px;
+	color: #fff;
+}
+
+.content_table{
+	height: 100%;
+	padding: 10px;
+}
+.container-flue{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+}
+.body-card{
+	width: 60%;
+	margin: 5% 25%;
+	background-color: #fff;
+	position: absolute;
+}
+.head-card{
+	width: 96%;
+	margin: 2% 2%;
+	background-color: #fff;
+	position: absolute;
+	
+}
+.body-card .cap{
+	text-align: center;
+	color:  rgb(37, 37, 37);;
+}
+.body-card .form-control{
+	width: 90%;
+	margin: auto;
+	
+}
+.body-card .btn{
+	width: 20%;
+	color: #fff;
+	background-color: rgb(37, 37, 37);
+	margin: 4% 40%;
+
+}
+.body-card label{
+	margin: 2% 5%;
+	
+}
+
+footer {
+	position: absolute;
+	bottom: 0; left: 0;
+	right: 0;
+	background-color: black;
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+
+.dialog {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-personalizado {
+	padding: 30px;
+	text-align: center;
+	outline: none;
+	background-color: #252525;
+	color: #fff;
+	border: none;
+	width: 270px;
+	flex-direction: row;
+	flex: 1;
+}
+
+.btn-personalizado:hover {
+	background-color: #363535;
+	cursor: pointer;
+}
+
+.btn-personalizado:active {
+	transform: scale(.97, .97);
+}

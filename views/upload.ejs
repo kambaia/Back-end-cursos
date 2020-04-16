@@ -1,0 +1,22 @@
+
+<% include partials/head %>
+
+<main role="main">
+    <section class="text-center container-my">
+        <div class="container">
+            <h2 class="jumbotron-heading">Adicionar documentos</h2>
+            <hr />
+            
+            <form action="javascript:void(0)" method="POST" enctype="multipart/form-data">
+                <input type="hidden" id="utilizador" class="form-control" value="<%=utilizador%>" />
+                <input type="hidden" id="dominio" class="form-control" value="<%=dominio%>" />
+                <input type="text" id="nome_documento" class="form-control" placeholder="Título do documento" />
+                <input type="file" id="documento" name="documento" class="form-control" />
+                <button type="button" onclick="upload()" class="btn btn-primary">Enviar</button>
+                <div class="form-control loading-content">
+                    <div class="loading"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
