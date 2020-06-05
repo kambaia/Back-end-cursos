@@ -1,7 +1,0 @@
-{
-  "host": "smtp.gmail.com",
-  "port": 587,
-  "secure": true,
-  "user": "kambaiaalberto@gmail.com",
-  "pass": "12dejunho"
-}
